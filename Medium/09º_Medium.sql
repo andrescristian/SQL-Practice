@@ -4,5 +4,5 @@ SELECT
   city AS "Cidade",
   count(patient_id)
 FROM patients
-group by city
+GROUP BY city
 ORDER BY COUNT(patient_id) DESC, city ASC;
